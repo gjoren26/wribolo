@@ -1,0 +1,31 @@
+.holder{
+    padding: 0px 35px 25px 0px;
+}
+.nav-icon{
+    filter: invert(1);
+    position: relative;
+    top: 3px;
+}
+.owl-theme .owl-nav{
+
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+}
+.owl-theme .owl-nav [class*=owl-]{
+    padding: 5px 8px;
+    position: relative;
+    background: rgb(245, 78, 66);
+    display: inline-block;
+    cursor: pointer;
+    font-size: -9px;
+    border-radius: 50%;
+    bottom: 215px;
+}
+.owl-next{
+    float: right;
+    margin-left: 50px
+}
+.owl-prev{
+    float: left;
+    margin-right: 50px
+}

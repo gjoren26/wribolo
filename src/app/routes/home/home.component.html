@@ -1,0 +1,12 @@
+
+<app-home-first-part></app-home-first-part>
+<mat-grid-list  cols="10" rowHeight="400px">
+    <mat-grid-tile 
+    *ngFor="let tabs of gjore"
+    [colspan]="tabs.cols"
+    [rowspan]="tabs.rows" >
+           <app-home-grid-card></app-home-grid-card>
+      </mat-grid-tile>
+
+
+</mat-grid-list>

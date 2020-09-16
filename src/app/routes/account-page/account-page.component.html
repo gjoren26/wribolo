@@ -1,0 +1,62 @@
+<div class="account-info">
+<img class="account-logo" src="https://goop.com/wp-content/uploads/2020/06/Mask-Group-2.png">
+<p>@username</p>
+<p class="full-name">Full name</p>
+<div class="account-text">
+    <div class="contact-icons">
+        <div class="icon-backgound">
+            <mat-icon class="icons">message</mat-icon>
+        </div>
+        <div class="icon-backgound">
+            <mat-icon class="icons">person_add</mat-icon>
+        </div>
+    </div>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+ </div>
+<div class="followers-following">
+<span class="followers">1.5k followers</span> <span>36 following</span>
+</div>
+
+
+
+</div>
+<div fxFlex="100" fxFlex.lt-md="100"  class="navigation-account">
+    <span class="navigation-text-account" 
+    [ngClass]="{'navigation-text-account-active':active_navigation_text=='my-wribolo'}"
+      (click)="navigationAccount('my-wribolo')">My Wribolo<span class="dot">&#8226;</span></span>
+    <span class="navigation-text-account"
+    [ngClass]="{'navigation-text-account-active':active_navigation_text=='bookmarks'}"
+     (click)="navigationAccount('bookmarks')">Bookmarks<span class="dot">&#8226;</span></span>
+    <span class="navigation-text-account" 
+    [ngClass]="{'navigation-text-account-active':active_navigation_text=='notifications'}"
+    (click)="navigationAccount('notifications')" >Notifications<span class="dot">&#8226;</span></span>
+    <span class="navigation-text-account"
+    [ngClass]="{'navigation-text-account-active':active_navigation_text=='account'}"
+     (click)="navigationAccount('account')">Account<span class="dot">&#8226;</span></span>
+     <span class="navigation-text-account"
+     [ngClass]="{'navigation-text-account-active':active_navigation_text=='settings'}"
+     (click)="navigationAccount('settings')">Settings<span class="dot">&#8226;</span></span>
+     <span class="navigation-text-account-last"
+     (click)="navigationAccount('log-out')">Log out</span>
+  </div>
+
+  <div fxFlex="100" fxFlex.lt-md="100"  class="other-options" >
+    <span class="other-option-text" 
+       style="color: #69B8F7">Article<span class="other-dot">&#8226;</span></span>
+    <span class="other-option-text"
+     >Followers<span class="other-dot">&#8226;</span></span>
+    <span class="other-option-text" 
+     >Following<span class="other-dot">&#8226;</span></span>
+    <span class="other-option-text"
+     >Activity</span>
+     
+  </div>
+
+  <div class="artical-account">
+      <mat-icon class="question-icon">contact_support outline</mat-icon>
+     <p class="no-article-text"> Hey! You have not written any article yet..</p>
+     <div class="continue-btn">Write your first article</div>
+
+  </div>
+  

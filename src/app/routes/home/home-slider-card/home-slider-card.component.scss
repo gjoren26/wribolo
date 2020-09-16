@@ -1,0 +1,38 @@
+.image{
+    width: 320px;
+    height: 338px;
+}
+.image-holder{
+    height: 100%;
+    max-width: 352px;
+}
+.logo{
+    height: 45px !important;
+    width: 45px !important;
+    border-radius: 50% !important;
+    flex-shrink: 0 !important;
+    object-fit: cover !important;
+}
+.article-text{
+    margin-top: 5px;
+}
+.publisher-name{
+    margin-top: 15px;
+}
+.image-shade{
+    width:calc(100% - 20px);
+    color: rgb(255, 255, 255);
+    bottom: 0;
+    height: 145px;
+    padding: 12px;
+    position: absolute;
+    background: linear-gradient(to bottom,rgb(0 0 0 / 0%) 0 rgb(0, 0, 0), 80%);
+    background-image: linear-gradient(rgb(0 0 0 / 0%) 0px, rgb(0, 0, 0) 80%);
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}

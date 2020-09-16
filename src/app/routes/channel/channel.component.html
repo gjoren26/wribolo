@@ -1,0 +1,36 @@
+<div class="cover-photo ">
+<img style="height: 150px;
+width: 100%;" src="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2017/08/nature-design.jpg">
+</div>
+
+<div fxLayout="row wrap" class="matero-row" style="width: 100%;">
+  <div style="width: 60%;">
+  <div class="channel-holder">
+      <img class="channel-logo" src="https://goop.com/wp-content/uploads/2020/06/Mask-Group-2.png">
+      <div>
+      <p class="channel-nickname">nikolov26</p>
+      <p class="channel-fullname">Gjorgji Nikolov</p>
+    </div>
+  </div>
+</div>
+  <div style="margin-top: 15px" >
+
+
+   <span class="m-r10 circle-icons"><mat-icon class="f-s20">notifications</mat-icon></span>
+   <span class="m-r10 subsrcibe-icon">Subscribe</span>
+   <span class="m-r10 circle-icons"><mat-icon class="f-s20">save_alt</mat-icon></span>
+  </div>
+  
+</div>
+<div class="channel-articles">
+<mat-grid-list  cols="10" rowHeight="400px">
+  <mat-grid-tile 
+  *ngFor="let tabs of gjore"
+  [colspan]="tabs.cols"
+  [rowspan]="tabs.rows" >
+         <app-home-grid-card></app-home-grid-card>
+    </mat-grid-tile>
+
+
+</mat-grid-list>
+</div>

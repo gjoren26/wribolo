@@ -1,0 +1,50 @@
+
+.holder{
+    height: 100%;
+    
+}
+mat-form-field{
+    width: 70%;
+}
+.login-card{
+    height: 100%;
+    width: 100%;  
+    text-align: center;
+    margin-top: calc(100% - 300px)
+}
+.hint{
+    color: rgb(95 179 246);
+    font-size: 12px;
+}
+.continue-btn{
+    width: 150px;
+    padding: 10px;
+    background-color: rgb(16, 108, 200);
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    height: 40px;
+    margin-top: 10px;
+    
+}
+.footer-login{
+    padding:50px
+}
+.register-text{
+    color: rgb(95 179 246);
+    position: relative;
+    left: -37px;
+}
+.subtitle{
+    margin-top: 20px !important;
+    letter-spacing: 1px;
+}
+
+.carousel-image{
+  height: 250px;
+  max-width: 250px;
+}
+.child{
+  margin-top: calc(25% - 30px);
+    margin-left: 20px;
+    margin-right: 20px;
+}

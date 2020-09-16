@@ -1,0 +1,43 @@
+<mat-toolbar class="matero-toolbar">
+  <button mat-icon-button class="matero-toolbar-button" *ngIf="toggle_icon"
+          (click)=" tef();">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <button mat-icon-button class="matero-toolbar-button" *ngIf="!closedSearchBar">
+    <mat-icon (click)="openSearchBar()">search</mat-icon>
+  </button>
+  <img src="./assets/images/logo.png" class="matero-branding-logo-expanded" alt="logo"  >
+  
+
+    <div fxFlex="100" fxFlex.lt-md="100" style="text-align: center; margin-top: 10px; margin-left: 240px;" *ngIf="closedSearchBar">
+      <mat-form-field appearance="outline" style="color: #7B939E">
+        <mat-label>Search Wribolo</mat-label>
+        <input matInput >
+        <span matPrefix><mat-icon>search</mat-icon></span>
+        <span matSuffix><mat-icon (click)="closeSearchBar()">highlight_off</mat-icon></span>
+      </mat-form-field>
+      
+      
+    </div>
+    <div fxFlex="100" fxFlex.lt-md="100" class="navigation"  *ngIf="!closedSearchBar">
+      <span class="navigation-text" 
+        [ngClass]="{'navigation-text-active':active_navigation_text=='article'}"
+        (click)="navigation('article')">ARTICLE</span>
+      <span class="navigation-text"
+        [ngClass]="{'navigation-text-active':active_navigation_text=='videos'}"
+       (click)="navigation('videos')">VIDEOS</span>
+      <span class="navigation-text" 
+      [ngClass]="{'navigation-text-active':active_navigation_text=='gallery'}"
+      (click)="navigation('gallery')" >GALLERY</span>
+      <span class="navigation-text-last"
+      [ngClass]="{'navigation-text-active-last':active_navigation_text=='for-me'}"
+       (click)="navigation('for-me')">FOR ME</span>
+    </div>
+
+  <span fxFlex></span>
+  <mat-icon style="color:#7B939E ;">help_outline</mat-icon>
+  <app-notification fxHide.lt-sm></app-notification>
+  <app-user></app-user>
+
+ 
+</mat-toolbar>
